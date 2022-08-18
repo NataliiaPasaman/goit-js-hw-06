@@ -8,13 +8,13 @@ const incrementBtn = document.querySelector('[data-action="increment"]');
 const hendleClicDecrement = (event) => {
     counterValue -= 1;
     counterElement.textContent = counterValue;
-    console.log(`Змуншуємо дічильник на 1 - поточне значення ${counterValue}`);
+    console.log(`Змуншуємо лічильник на 1 - поточне значення ${counterValue}`);
 }
 
 const hendleClicIncrement = (event) => {
     counterValue += 1;
     counterElement.textContent = counterValue;
-    console.log(`Збільшуємо дічильник на 1 - поточне значення ${counterValue}`);
+    console.log(`Збільшуємо лічильник на 1 - поточне значення ${counterValue}`);
 }
 
 decrementBtn.addEventListener('click', hendleClicDecrement);
