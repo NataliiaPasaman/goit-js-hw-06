@@ -1,14 +1,11 @@
-const inputControler = document.querySelector('#font-size-control');
-const textElement = document.querySelector('#text');
+const inputControler = document.querySelector("#font-size-control");
+const textElement = document.querySelector("#text");
 
-textElement.style.fontSize = '56px';
+textElement.style.fontSize = "56px";
 
 const hendleInputChangeText = (event) => {
-    let inputValue = Number(event.currentTarget.value);
-
-    if (inputValue += 1 && inputValue < 96) {
-        textElement.style.fontSize = inputValue + 'px';
-    }
+  let inputValue = Number(event.currentTarget.value);
+  textElement.style.fontSize = inputValue + "px";
 };
 
-inputControler.addEventListener('input', hendleInputChangeText);
+inputControler.addEventListener("input", hendleInputChangeText);
