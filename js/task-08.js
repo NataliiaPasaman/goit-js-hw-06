@@ -13,9 +13,9 @@ const onFormSubmit = (event) => {
         return alert(`Ви не ввели email. Будь ласка, заповніть поле Email`);
     };
 
-    const formData = { emailForm, passwordForm };
-    console.log(formData);
+    console.log(`{ Email: ${emailForm}, Password: ${passwordForm} }`);
     formElement.reset();
 };
 
 formElement.addEventListener('submit', onFormSubmit);
+
