@@ -4,7 +4,7 @@ const textElement = document.querySelector("#text");
 textElement.style.fontSize = "56px";
 
 const hendleInputChangeText = (event) => {
-  let inputValue = Number(event.currentTarget.value);
+  let inputValue = event.currentTarget.value;
   textElement.style.fontSize = inputValue + "px";
 };
 
